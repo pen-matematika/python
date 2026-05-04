@@ -248,7 +248,7 @@ print("Total dari list adalah:", total)
       // Pengganti google.script.run untuk komunikasi lintas domain (API Fetch)
       function gasRun(action, payload = null) {
         return new Promise(function(resolve, reject) {
-          if (!GAS_API_URL || GAS_API_URL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE') {
+          if (!GAS_API_URL || GAS_API_URL === 'https://script.google.com/macros/s/AKfycbwgF9KNRu1qSJYRgqzlliSsAznIfz-FX-FUcJEdRFC57KUqQ1nBYUWugEp-xtMZK5htzA/exec') {
             return reject(new Error("URL GAS_API_URL belum disetting di kode HTML!"));
           }
 
